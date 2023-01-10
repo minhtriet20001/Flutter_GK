@@ -173,10 +173,10 @@ class _detailCategoriesState extends State<detailCategories> {
                                   msg: "Please come back",
                                   title: 'Product is updating',
                                   color: Colors.white,
-                                  lottieBuilder: Lottie.asset(
-                                    'assets/loading.json',
-                                    fit: BoxFit.contain,
-                                  ),
+                                  // lottieBuilder: Lottie.asset(
+                                  //   'assets/loading.json',
+                                  //   fit: BoxFit.contain,
+                                  // ),
                                   context: context,
                                   actions: [
                                     IconsButton(

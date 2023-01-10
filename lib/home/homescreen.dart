@@ -134,10 +134,10 @@ class setAppbar extends StatelessWidget implements PreferredSizeWidget {
             msg: "Today's promotion",
             title: 'HOT NEWS',
             color: Colors.white,
-            lottieBuilder: Lottie.asset(
-              'assets/animation.json',
-              fit: BoxFit.contain,
-            ),
+            // lottieBuilder: Lottie.asset(
+            //   'assets/animation.json',
+            //   fit: BoxFit.contain,
+            // ),
             context: context,
             actions: [
               IconsButton(

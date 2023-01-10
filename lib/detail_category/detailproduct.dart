@@ -454,12 +454,12 @@ class _DetailProductState extends State<DetailProduct> {
             ],
           ),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
                 child: const Text('Cancel'),
                 onPressed: () {
                   Navigator.pop(context);
                 }),
-            FlatButton(
+            TextButton(
                 child: const Text('Send'),
                 onPressed: () {
                   Navigator.pop(context);

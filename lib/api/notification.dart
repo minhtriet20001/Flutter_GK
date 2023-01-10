@@ -11,13 +11,11 @@ class NotificationService extends ChangeNotifier {
     AndroidInitializationSettings androidInitializationSettings =
         AndroidInitializationSettings("ic_launcher");
 
-    IOSInitializationSettings iosInitializationSettings =
-        IOSInitializationSettings();
+    DarwinNotificationDetails iosInitializationSettings =
+        DarwinNotificationDetails();
 
     final InitializationSettings initializationSettings =
-        InitializationSettings(
-            android: androidInitializationSettings,
-            iOS: iosInitializationSettings);
+        InitializationSettings(android: androidInitializationSettings);
 
     await flutterLocalNotificationsPlugin.initialize(initializationSettings);
   }
@@ -25,7 +23,7 @@ class NotificationService extends ChangeNotifier {
   Future instantNofitication() async {
     var android = AndroidNotificationDetails("id", "channel");
 
-    var ios = IOSNotificationDetails();
+    var ios = DarwinNotificationDetails();
 
     var platform = new NotificationDetails(android: android, iOS: ios);
 
